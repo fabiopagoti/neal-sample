@@ -18,7 +18,7 @@ import {
   TeamMember,
 } from "neal-react";
 
-const brandName = "SamplePage";
+const brandName = "Landing Page";
 const brand = <span>{brandName}</span>;
 
 const onSignup = ({ name: name, email: email, password: password }) => Stripe.StripeHandler.open({
@@ -98,24 +98,12 @@ export default (props) => {
 
       <Navbar brand={brand}>
         <NavItem><Link to="Home" className="nav-link">Home</Link></NavItem>
-        <NavItem dropdown={true}>
-          <DropdownToggle>Github</DropdownToggle>
-          <DropdownMenu>
-            <a href="https://github.com/dennybritz/neal-react" className="dropdown-item" target="_blank">
-              Neal React
-            </a>
-            <a href="https://github.com/dennybritz/neal-sample" className="dropdown-item" target="_blank">
-              Sample Page
-            </a>
-          </DropdownMenu>
-        </NavItem>
       </Navbar>
 
       <Hero backgroundImage="img/hero-bg-01.jpg"
         className="text-xs-center">
-        <h1 className="display-4"> Declarative Landing Pages for React.js </h1>
-        <p className="lead">Build a beautiful landing page in less than an hour.
-          No more redundant code. Easily extensible.</p>
+        <h1 className="display-4">Landing Page feita em React.js </h1>
+        <p className="lead">Esta pode ser a página de apresentação do seu produto</p>
         <p>
           <a href="https://github.com/dennybritz/neal-react" target="_blank" className="btn btn-white">
             Get it on Github
@@ -130,10 +118,6 @@ export default (props) => {
           <ImageListItem src="img/press/theverge-logo.png" url="http://www.theverge.com/"/>
           <ImageListItem src="img/press/techcrunch-logo.jpg" url="http://techcrunch.com/"/>
         </ImageList>
-      </Section>
-
-      <Section className="nopad-bottom">
-        <Code lang="jsx" block>{sampleCode}</Code>
       </Section>
 
       <Section>

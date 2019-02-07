@@ -1,0 +1,8 @@
+---
+applications:
+- name: landingpage
+  random-route: true
+  buildpack: staticfile_buildpack
+  memory: 256M
+  disk_quota: 256M
+  path: public
